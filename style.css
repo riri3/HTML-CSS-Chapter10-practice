@@ -27,8 +27,8 @@ header .heading {
 }
 
 .nav-list-item {
-  list-style: none;
-  display: inline-block;
+  list-style: none; /* liの頭の・をなくす */
+  display: inline-block; /* 幅や高さ、余白が変更できるインライン要素にしたい */
   margin: 0 20px;
 }
 
@@ -57,21 +57,61 @@ header .heading {
   margin-top: 30px;
 }
 
-.main {
-  width: 840px;
+main {
+  width: 800px;
   display: flex;
-  justify-content: center;
+  justify-content: center;/* blog.sidebarの横並び・中央寄せ指定 */
   margin: 0 auto;
+  padding: 70px 0;
 }
 
 .blog {
   width: 600px;
-  height: 1400px;
+  margin-right: 30px;/* blogの右側余白(sidebarとの間に余白欲しい) */
+}
+
+.blog-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6; /* 行間の高さ設定 */
+}
+
+.blog-box {
+  margin-top: 50px;
+}
+
+.blog-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #f7f7f7
+}
+
+.blog-image {
+  height: 180px;
+}
+
+.blog-text-heading {
+  margin-bottom: 15px;
+}
+
+.blog-date {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.category {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #acabab;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
 }
 
 .sidebar {
-  width: 240px;
-  height: 1400px;
+  width: 230px;
 }
 
 footer {
