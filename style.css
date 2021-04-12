@@ -273,6 +273,10 @@ footer {
     padding-top: 5px;
   }
 
+  .pagination {
+    margin-bottom: 50px;
+  }
+
   .sidebar {
     width: 100%;
     padding-left: 3%;
@@ -286,9 +290,5 @@ footer {
 
   .instagram-box:nth-child(odd) {
     margin-right: 4%;
-  }
-
-  .pagination {
-    margin-bottom: 50px;
   }
 }
